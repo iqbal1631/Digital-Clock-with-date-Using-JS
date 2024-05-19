@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clock {
+        width: 300px;
+        height: auto;
+        text-align: center;
+        color: black;
+        font-size: 70px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    
+    .day{
+        border: 1px solid;
+        background-color: white;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+
+    ul li {
+        padding: 7px;
+        box-sizing: border-box;
+        border: 1px solid;
+        background-color: wheat;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="clock">
+            <div class="day">
+                <p id="date">May 19, 2024</p>
+                <p id="days">Sunday</p>
+            </div>
+            <div class="time">
+                <ul id="times">
+                    <li id="hours">00 </li>
+                    <li id="mins">00 </li>
+                    <li id="secs">00 </li>
+                    <li id="ampm">PM</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/timer.js"></script>
+
+</html>
